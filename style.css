@@ -163,6 +163,6 @@ body {
 
 @media screen and (max-width: 599px) {
     .input textarea {
-        width: 360px;
+        width: 330px;
     }
 }
