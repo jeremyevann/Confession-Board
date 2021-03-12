@@ -8,7 +8,7 @@
 .header {
     padding: 45px;
     text-align: center;
-    opacity: 0.8;
+    opacity: 1;
     color:floralwhite;
 }
 
@@ -54,6 +54,7 @@ form {
     font-size: 16px;
     color: white;
     background-color: rgba(0, 0, 0, 0.644);
+    z-index: 9;
 }
 
 .input textarea:focus, .input textarea:hover {
@@ -86,7 +87,7 @@ body {
     width: 60px;
     height: 60px;
     background-color: transparent;
-    border: 6px solid rgba(255, 255, 255, 0.8)
+    border: 6px solid rgba(255, 255, 255, 0.233)
 }
 
 .box div:nth-child(1) {
@@ -160,8 +161,8 @@ body {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
     .input textarea {
-        width: 380px;
+        width: 360px;
     }
 }
