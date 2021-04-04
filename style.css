@@ -21,13 +21,13 @@ form {
     background: none;
 }
 
-.button {
+.sampaikan, .resp-button {
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
-.button button {
+.sampaikan button {
     padding: 10px 15px;
     border: none;
     margin: 5vh 1vh 0;
@@ -39,10 +39,64 @@ form {
     color: white;
 }
 
-.button button:hover {
+.sampaikan button:hover, .resp-button button:hover {
     cursor: pointer;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.24), 0 17px 50px rgba(0,0,0,0.19);
     transition: 0.3s;
+}
+
+.resp-button button {
+    padding: 10px 15px;
+    border: none;
+    margin: 5vh 1vh 0;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.64);
+    color: rgb(0, 0, 0);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-header {
+    padding: 2px 16px;
+    color: black;
+}
+
+.responses {
+    position: relative;
+    background-color: #fefefe;
+    margin: 150px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 900px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .input textarea {
@@ -161,8 +215,31 @@ body {
     }
 }
 
+@media screen and (max-width: 899px) {
+    iframe {
+        width: 560px;
+    }
+
+    .responses {
+        width: 599px;
+    }
+}
+
 @media screen and (max-width: 599px) {
     .input textarea {
         width: 330px;
     }
+
+    iframe {
+        width: 290px;
+    }
+
+    .responses {
+        width: 330px;
+    }
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
 }

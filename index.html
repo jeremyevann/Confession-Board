@@ -14,6 +14,7 @@
         <div class="header">
             <h1>Jervan's Confession Board</h1>
             <p>Hai, semua! Ini adalah pengganti Secreto aku. Feel free to tell me anything. Aku juga bakal rutin cek entry dari kalian. Be honest! ^,^</p>
+            <p>BTW, pencet "Sampaikan" nya sekali aja ya gais, hehehe</p>
         </div>
         <div class="body">
             <form id="myForm">
@@ -23,8 +24,22 @@
                     <textarea rows="5" cols="60" placeholder="Ketik di sini ..." name="pesan"></textarea>
                 </div>
             </form>
-            <div class="button">
+            <div class="sampaikan">
                 <button onclick="SubForm()">Sampaikan</button>
+            </div>
+            <div class="resp-button">
+                <button id="myBtn">Pertanyaan dan Jawaban</button>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="responses">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Pertanyaan dan Jawaban</h2>
+                    </div>
+                    <div class="modal-body">
+                        <iframe width="850" height="400" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQMeof6OdQQ7CR-9CBhnu8FPNuPu_Bnx2X9AL2RvlYTbnw3eeCOCzcZwYH6hWwHQy1rmpc5P1NuzXRZ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                    </div>
+                </div>
             </div>
             <div class="box">
                 <div></div>
